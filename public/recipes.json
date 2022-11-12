@@ -1,0 +1,45 @@
+[
+    {
+        "name":"fajitas",
+        "ingredients": [
+            {
+                "name": "chicken" 
+            },{
+                "name": "bell pepper",
+                "quantity": 1
+            },{
+                "name": "onoin",
+                "quantity": ".5"
+            },{
+                "name":"black pepper",
+                "quantity": ".5",
+                "unit": "tsp"
+            },{
+                "name":"chili power",
+                "quantity": ".5",
+                "unit": "tsp"
+            },{
+                "name":"salt",
+                "quantity": "1",
+                "unit": "tsp"
+            },{
+                "name":"cumin",
+                "quantity": "1",
+                "unit": "tsp"
+            }
+        ],
+        "instructions":["chop", "cook", "serve"]
+    },
+    {
+        "name":"spag",
+        "ingredients": [
+            {
+                "name": "spa"
+            },{
+                "name": "mushrooms"
+            }
+        ],
+        "instructions": ["boil", "cook", "serve"]
+
+    }
+]
