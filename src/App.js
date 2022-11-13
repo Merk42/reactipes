@@ -1,11 +1,13 @@
 import './App.css';
 import {useEffect, useState} from 'react';
 import Recipe from './Recipe';
-
+import FilterRecipes from './FilterRecipes';
 
 function App() {
   const [selected, setSelected]=useState({});
-  const [data,setData]=useState([]);
+  const [data, setData]=useState([]);
+  const [ingredientFilter, setIngredientFilter] = useState('');
+  const filteredRecipes = ingredientFilter === '' ? data : data.filter(cl => cl.ingredients.some(c => c.name === ingredientFilter));
   const getData=()=>{
     fetch('recipes.json'
     ,{
@@ -28,17 +30,23 @@ function App() {
     getData()
   },[])
 
+  const updateIngredientFilter = (e) => {
+    console.log('data from child', e)
+    setIngredientFilter(e);
+  }
+
   return (
     <div className="App">
       <aside>
+        <FilterRecipes myProp={updateIngredientFilter}></FilterRecipes>
       <ul>
       {
-       data && data.length>0 && data.map((item, index)=><li key={item.name.toString()} onClick={() => setSelected(data[index])}>{item.name}</li>)
+       filteredRecipes && filteredRecipes.length>0 && filteredRecipes.map((item, index)=><li key={item.name.toString()} onClick={() => setSelected(filteredRecipes[index])}>{item.name}</li>)
      }
      </ul>
      </aside>
      <main>
-     <Recipe chosen={selected}/>
+     {selected !== {} && <Recipe chosen={selected}/> }
      </main>
     </div>
   );

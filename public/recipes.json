@@ -8,14 +8,14 @@
                 "name": "bell pepper",
                 "quantity": 1
             },{
-                "name": "onoin",
+                "name": "onion",
                 "quantity": ".5"
             },{
                 "name":"black pepper",
                 "quantity": ".5",
                 "unit": "tsp"
             },{
-                "name":"chili power",
+                "name":"chili powder",
                 "quantity": ".5",
                 "unit": "tsp"
             },{
@@ -26,20 +26,33 @@
                 "name":"cumin",
                 "quantity": "1",
                 "unit": "tsp"
+            },{
+                "name":"lime juice"
+            },{
+                "name":"flour tortillas",
+                "quantity": 6
             }
         ],
-        "instructions":["chop", "cook", "serve"]
+        "instructions":[
+            "Mix black pepper, chili powder, salt, and cumin in small dish",
+            "Cut chicken into one-inch pieces",
+            "Stack tortillas on a plate, place a damp paper towel between each one, and microwave for 1 minute",
+            "Heat pan with oil and cook chicken while just slightly brown",
+            "While the chicken is cooking, cut the onion and bell pepper into strips.",
+            "Once chicken is almost done, add half of the season and continue to cook until browned, then set aside",
+            "Cook onion and peppers for a few minutes, adding the other half of the seasoning",
+            "Mix chicken back into pan and deglaze with lime juice"
+        ]
     },
     {
-        "name":"spag",
+        "name":"mushroom spaghetti",
         "ingredients": [
             {
-                "name": "spa"
+                "name": "spaghetti"
             },{
                 "name": "mushrooms"
             }
         ],
         "instructions": ["boil", "cook", "serve"]
-
     }
 ]
