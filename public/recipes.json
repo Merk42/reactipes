@@ -1,58 +1,114 @@
-[
-    {
-        "name":"fajitas",
-        "ingredients": [
-            {
-                "name": "chicken" 
-            },{
-                "name": "bell pepper",
-                "quantity": 1
-            },{
-                "name": "onion",
-                "quantity": ".5"
-            },{
-                "name":"black pepper",
-                "quantity": ".5",
-                "unit": "tsp"
-            },{
-                "name":"chili powder",
-                "quantity": ".5",
-                "unit": "tsp"
-            },{
-                "name":"salt",
-                "quantity": "1",
-                "unit": "tsp"
-            },{
-                "name":"cumin",
-                "quantity": "1",
-                "unit": "tsp"
-            },{
-                "name":"lime juice"
-            },{
-                "name":"flour tortillas",
-                "quantity": 6
-            }
-        ],
-        "instructions":[
-            "Mix black pepper, chili powder, salt, and cumin in small dish",
-            "Cut chicken into one-inch pieces",
-            "Stack tortillas on a plate, place a damp paper towel between each one, and microwave for 1 minute",
-            "Heat pan with oil and cook chicken while just slightly brown",
-            "While the chicken is cooking, cut the onion and bell pepper into strips.",
-            "Once chicken is almost done, add half of the season and continue to cook until browned, then set aside",
-            "Cook onion and peppers for a few minutes, adding the other half of the seasoning",
-            "Mix chicken back into pan and deglaze with lime juice"
-        ]
-    },
-    {
-        "name":"mushroom spaghetti",
-        "ingredients": [
-            {
-                "name": "spaghetti"
-            },{
-                "name": "mushrooms"
-            }
-        ],
-        "instructions": ["boil", "cook", "serve"]
+{
+    "recipes": [
+        {
+            "name": "fajitas",
+            "ingredients": [
+                {
+                    "id":"0"
+                },
+                {
+                    "id":"1",
+                    "quantity": 1
+                },
+                {
+                    "id":"2",
+                    "quantity": ".5"
+                },
+                {
+                    "id":"3",
+                    "quantity": ".5",
+                    "unit": "tsp"
+                },
+                {
+                    "id":"4",
+                    "quantity": ".5",
+                    "unit": "tsp"
+                },
+                {
+                    "id":"5",
+                    "quantity": "1",
+                    "unit": "tsp"
+                },
+                {
+                    "id":"6",
+                    "quantity": "1",
+                    "unit": "tsp"
+                },
+                {
+                    "id":"7"
+                },
+                {
+                    "id":"8",
+                    "quantity": 6
+                }
+            ],
+            "instructions": [
+                "Mix black pepper, chili powder, salt, and cumin in small dish",
+                "Cut chicken into one-inch pieces",
+                "Stack tortillas on a plate, place a damp paper towel between each one, and microwave for 1 minute",
+                "Heat pan with oil and cook chicken while just slightly brown",
+                "While the chicken is cooking, cut the onion and bell pepper into strips.",
+                "Once chicken is almost done, add half of the season and continue to cook until browned, then set aside",
+                "Cook onion and peppers for a few minutes, adding the other half of the seasoning",
+                "Mix chicken back into pan and deglaze with lime juice"
+            ]
+        },
+        {
+            "name": "mushroom spaghetti",
+            "ingredients": [
+                {
+                    "id":"9"
+                },
+                {
+                    "id":"10"
+                }
+            ],
+            "instructions": [
+                "Wash and cut mushrooms into 1.5 inch slices",
+                "Add oil to pan on medium heat",
+                "Once hot, add mushrooms",
+                "Add spaghetti to large pot, cover with water and boil",
+                "After 5 minutes, reserve some of the pasta water",
+                "Add pasta water to mushrooms, continuing to cook"
+            ]
+        }
+    ],
+    "ingredients": {
+        "0": {
+            "singular":"chicken"
+        },
+        "1": {
+            "singular":"bell pepper",
+            "plural":"bell peppers"
+        },
+        "2": {
+            "singular":"onion"
+        },
+        "3": {
+            "singular":"black pepper"
+        },
+        "4": {
+            "singular":"chili powder"
+        },
+        "5": {
+            "singular":"salt"
+        },
+        "6": {
+            "singular":"cumin"
+        },
+        "7": {
+            "singular":"lime juice"
+        },
+        "8": {
+            "singular":"flour tortilla",
+            "plural": "flour tortillas"
+        },
+        "9": {
+            "singular":"spaghetti"
+        },
+        "10": {
+            "singular":"mushroom",
+            "plural":"mushrooms"
+        }
     }
-]
+}

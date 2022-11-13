@@ -7,7 +7,8 @@ function App() {
   const [selected, setSelected]=useState({});
   const [data, setData]=useState([]);
   const [ingredientFilter, setIngredientFilter] = useState('');
-  const filteredRecipes = ingredientFilter === '' ? data : data.filter(cl => cl.ingredients.some(c => c.name === ingredientFilter));
+  const filteredRecipes = ingredientFilter === '' ? data.recipes : data.recipes.filter(cl => cl.ingredients.some(c => c.name === ingredientFilter));
+  const ingredientMap = data.ingredients;
   const getData=()=>{
     fetch('recipes.json'
     ,{
@@ -34,7 +35,6 @@ function App() {
     console.log('data from child', e)
     setIngredientFilter(e);
   }
-
   return (
     <div className="App">
       <aside>
@@ -46,7 +46,7 @@ function App() {
      </ul>
      </aside>
      <main>
-     {selected !== {} && <Recipe chosen={selected}/> }
+     {selected !== {} && <Recipe chosen={selected} ingredientMap={ingredientMap}/> }
      </main>
     </div>
   );

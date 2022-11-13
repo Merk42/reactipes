@@ -8,7 +8,7 @@ export default function FilterRecipes(props) {
     }
     return (
         <>
-        <label for="ingredient-filter">Filter by ingredient</label>
+        <label htmlFor="ingredient-filter">Filter by ingredient</label>
         <input type="text" id="ingredient-filter" list="ingredients" placeholder='chicken' value={ingredientFilter} onChange={handleIngredientFilterChange}/>
         <datalist id="ingredients">
             /* update value with IDs */
