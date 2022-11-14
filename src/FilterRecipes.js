@@ -7,6 +7,9 @@ export default function FilterRecipes(props) {
         props.myProp(e.target.value);
     }
     const ingredientMap = JSON.parse(sessionStorage.getItem("ingredients"));
+    const INGARR = Object.keys(ingredientMap).map((key) => ({"id": key, "name": ingredientMap[key].singular}));
+    // should sort by name
+    console.log('ingarr', INGARR)
     return (
         <>
         <label htmlFor="ingredient-filter">Filter by ingredient</label>
