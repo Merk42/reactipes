@@ -71,6 +71,174 @@
                 "After 5 minutes, reserve some of the pasta water",
                 "Add pasta water to mushrooms, continuing to cook"
             ]
+        },
+        {
+            "name": "Non-Fatass Sweet and Sour Chicken",
+            "source": "http://goonswithspoons.com/Non-Fatass_Sweet_and_Sour_Chicken",
+            "ingredients": [
+                {
+                    "id":"11"
+                },
+                {
+                    "id":"12",
+                    "quantity": 2,
+                    "unit":"Tbsp"
+                },
+                {
+                    "id":"13",
+                    "quantity": 2,
+                    "unit":"Tbsp"
+                },
+                {
+                    "id":"14",
+                    "quantity": 2,
+                    "unit":"Tbsp"
+                },
+                {
+                    "id":"15",
+                    "quantity": 2,
+                    "unit":"tsp"
+                },
+                {
+                    "id":"16",
+                    "quantity": 2,
+                    "unit":"tsp"
+                },
+                {
+                    "id":"17",
+                    "quantity": 1,
+                    "unit":"Tbsp"
+                },
+                {
+                    "id":"16",
+                    "quantity": 1,
+                    "unit":"Tbsp"
+                },
+                {
+                    "id":"0",
+                    "quantity": 1,
+                    "unit":"lb"
+                },
+                {
+                    "id":"18",
+                    "quantity": 1,
+                    "unit":"tsp"
+                },
+                {
+                    "id":"1",
+                    "quantity": 1,
+                    "unit":"medium"
+                },
+                {
+                    "id":"2",
+                    "quantity": 1,
+                    "unit":"medium"
+                }
+            ],
+            "instructions":[
+                " In a non-copper bowl, mix the pineapple juice, brown sugar, vinegar, ketchup, 2 tsp cornstarch, and soy sauce. Make sure all the clumps of cornstarch have been dissolved! Set the sauce aside, while we cook the chicken.",
+                "You then nead to coat the cubed chicken with 1 tbsp of flour and 1 tbsp of cornstarch. I find that the easiest way to do this is combine the flour/cornstarch mixture and chicken in a plastic bag and just shake, shake, shake, shake-a, shake-it! (Sorry about the bad, but catchy, song reference.) When this is done, the chicken pieces should all be lightly coated with the mixture. If there are some clumps, don't sweat it. The dish will still turn out fine.",
+                "Next, heat the canola oil in a large skillet on medium-high heat. When the oil is smoking hot, add the chicken. Cook on the first side for approximately 4 minutes and then flip with tongs. The chicken should be a light golden brown.",
+                "While the second side of the chicken is cooking, cut up your pepper and onion into roughly 3/4 inch slices.",
+                "After about four minutes of cooking, both sides of the chicken should be golden brown. At this point, you want to remove the chicken from the pan and place it on a seperate plate.",
+                "In the same skillet, throw in the red pepper and onion. If your oil was hot enough, there should be plenty of oil left to cook the veggies. Cook for three minutes, flipping a few times in the process. You want your vegetables to be crisp, so don't cook them for too long! Three minutes is usually the perfect amount of time.",
+                "Once the peppers and onion have cooked, add the sauce mixture, that you made previously, into the pan. Cook for about two minutes and the sauce should thicken nicely. Be sure to stir the sauce and veggie mixture several times during this cooking process or else it will burn.",
+                "When the mixture looks like the above, it's time to add the cooked cubed chicken pieces, the pineapple, and the maraschino cherries. Stir everything together real well and cook for another 2 minutes.",
+                "Serve with white rice."
+            ]   
+        },
+        {
+            "name":"Easy Basic Pancakes",
+            "source":"https://www.marthastewart.com/338185/basic-pancakes",
+            "ingredients":[
+                {
+                    "id":"17",
+                    "quantity":1,
+                    "unit":"cup"
+                },
+                {
+                    "id":"19",
+                    "quantity":2,
+                    "unit":"tbsp"
+                },
+                {
+                    "id":"20",
+                    "quantity":2,
+                    "unit":"tsp"
+                },
+                {
+                    "id":"5",
+                    "quantity":".5",
+                    "unit":"tsp"
+                },
+                {
+                    "id":"21",
+                    "quantity":1,
+                    "unit":"cup"
+                },
+                {
+                    "id":"22",
+                    "quantity":2,
+                    "unit":"tbsp"
+                },
+                {
+                    "id":"23",
+                    "quantity":1
+                },
+                {
+                    "id":"24",
+                    "quantity":1,
+                    "unit":"tbsp"
+                }
+            ],
+            "instructions":[
+                "Preheat oven to 200 degrees; have a baking sheet or heatproof platter ready to keep cooked pancakes warm in the oven. In a small bowl, whisk together flour, sugar, baking powder, and salt; set aside.",
+                "In a medium bowl, whisk together milk, butter (or oil), and egg. Add dry ingredients to milk mixture; whisk until just moistened (do not overmix; a few small lumps are fine).",
+                "Heat a large skillet (nonstick or cast-iron) or griddle over medium. Fold a sheet of paper towel in half, and moisten with oil; carefully rub skillet with oiled paper towel.",
+                "For each pancake, spoon 2 to 3 tablespoons of batter onto skillet, using the back of the spoon to spread batter into a round (you should be able to fit 2 to 3 in a large skillet).",
+                "Cook until surface of pancakes have some bubbles and a few have burst, 1 to 2 minutes. Flip carefully with a thin spatula, and cook until browned on the underside, 1 to 2 minutes more. Transfer to a baking sheet or platter; cover loosely with aluminum foil, and keep warm in oven. Continue with more oil and remaining batter. (You'll have 12 to 15 pancakes.) Serve warm, with desired toppings."
+            ]
+        },
+        {
+            "name":"One pot garlic parmesan pasta",
+            "ingredients":[
+                {
+                    "id":"22",
+                    "quantity": 2,
+                    "unit":"tbsp"
+                },
+                {
+                    "id":"25",
+                    "quantity": 4,
+                    "unit":"cloves"
+                },
+                {
+                    "id":"26",
+                    "quantity": 2,
+                    "unit":"cups"
+                },
+                {
+                    "id":"27",
+                    "quantity": 8,
+                    "unit":"ounces"
+                },
+                {
+                    "id":"28",
+                    "quantity": ".5",
+                    "unit":"cups"
+                },
+                {
+                    "id":"29",
+                    "quantity":2,
+                    "unit":"tbsp"
+                }
+            ],
+            "instructions":[
+                "Melt butter in a large skillet over medium high heat. Add garlic and cook, stirring frequently, until fragrant, about 1-2 minutes.",
+                "Stir in chicken broth, milk and fettuccine; season with salt and pepper, to taste.",
+                "Bring to a boil; reduce heat and simmer, stirring occasionally, until pasta is cooked through, about 18-20 minutes. Stir in Parmesan. If the mixture is too thick, add more milk as needed until desired consistency is reached.",
+                "Serve immediately, garnished with parsley, if desired."
+            ]
         }
     ],
     "ingredients": {
@@ -109,6 +277,64 @@
         "10": {
             "singular":"mushroom",
             "plural":"mushrooms"
+        },
+        "11": {
+            "singular":"pineapple tidbits"
+        },
+        "12": {
+            "singular":"brown sugar"
+        },
+        "13": {
+            "singular":"white vinegar"
+        },
+        "14": {
+            "singular":"ketchup"
+        },
+        "15": {
+            "singular":"cornstarch"
+        },
+        "16": {
+            "singular":"soy sauce"
+        },
+        "17": {
+            "singular":"flour"
+        },
+        "18": {
+            "singular":"canola oil"
+        },
+        "19": {
+            "singular":"sugar"
+        },
+        "20": {
+            "singular":"baking powder"
+        },
+        "21": {
+            "singular":"milk"
+        },
+        "22": {
+            "singular":"butter"
+        },
+        "23": {
+            "singular":"egg",
+            "plural":"eggs"
+        },
+        "24": {
+            "singular":"vegetable oil"
+        },
+        "25": {
+            "singular":"garlic"
+        },
+        "26": {
+            "singular":"chicken broth"
+        },
+        "27": {
+            "singular":"fettuccine"
+        },
+        "28": {
+            "singular":"parmesan"
+        },
+        "29": {
+            "singular":"parsley"
         }
     }
 }

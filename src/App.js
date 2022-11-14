@@ -7,7 +7,7 @@ function App() {
   const [selected, setSelected]=useState({});
   const [data, setData]=useState([]);
   const [ingredientFilter, setIngredientFilter] = useState('');
-  const filteredRecipes = ingredientFilter === '' ? data.recipes : data.recipes.filter(cl => cl.ingredients.some(c => c.name === ingredientFilter));
+  const filteredRecipes = ingredientFilter === '' ? data.recipes : data.recipes.filter(cl => cl.ingredients.some(c => c.id === ingredientFilter));
   const ingredientMap = data.ingredients;
   const getData=()=>{
     fetch('recipes.json'
