@@ -1,10 +1,13 @@
 function IngredientDetail({ ingredient }) {
     const INGREDIENTMAP = JSON.parse(sessionStorage.getItem("ingredients"));
-    let name = INGREDIENTMAP[ingredient.id].singular;
-    if (ingredient.quantity && !ingredient.unit && ingredient.quantity > 1) {
-        if (INGREDIENTMAP[ingredient.id].plural) {
-            name = INGREDIENTMAP[ingredient.id].plural
-        }   
+    let name = ''
+    if (INGREDIENTMAP) {
+        name = INGREDIENTMAP[ingredient.id].singular;
+        if (ingredient.quantity && !ingredient.unit && ingredient.quantity > 1) {
+            if (INGREDIENTMAP[ingredient.id].plural) {
+                name = INGREDIENTMAP[ingredient.id].plural
+            }   
+        }
     }
     return (
         <span>{ingredient.quantity}{ingredient.unit} {name}</span>
