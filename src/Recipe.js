@@ -1,8 +1,9 @@
-function IngredientDetail({ ingredient, ingredientMap }) {
-    let name = ingredientMap[ingredient.id].singular
+function IngredientDetail({ ingredient }) {
+    const INGREDIENTMAP = JSON.parse(sessionStorage.getItem("ingredients"));
+    let name = INGREDIENTMAP[ingredient.id].singular;
     if (ingredient.quantity && !ingredient.unit && ingredient.quantity > 1) {
-        if (ingredientMap[ingredient.id].plural) {
-            name = ingredientMap[ingredient.id].plural
+        if (INGREDIENTMAP[ingredient.id].plural) {
+            name = INGREDIENTMAP[ingredient.id].plural
         }   
     }
     return (
@@ -10,13 +11,13 @@ function IngredientDetail({ ingredient, ingredientMap }) {
     )
 }
 
-function Ingredients({ ingredients, ingredientMap }) {
+function Ingredients({ ingredients }) {
     return (
         <>
             <h2>Ingredients</h2>
             <ul>
                 {
-                    ingredients && ingredients.length > 0 && ingredients.map((ingredient) => <li key={ingredient.id}><IngredientDetail ingredient={ingredient} ingredientMap={ingredientMap} /></li>)
+                    ingredients && ingredients.length > 0 && ingredients.map((ingredient) => <li key={ingredient.id}><IngredientDetail ingredient={ingredient} /></li>)
                 }
             </ul>
         </>
@@ -36,11 +37,11 @@ function Instructions({ instructions }) {
     )
 }
 
-export default function Recipe({ chosen, ingredientMap }) {
+export default function Recipe({ chosen }) {
     return (
         <>
             <h1>{chosen.name}</h1>
-            <Ingredients ingredients={chosen.ingredients} ingredientMap={ingredientMap} />
+            <Ingredients ingredients={chosen.ingredients} />
             <Instructions instructions={chosen.instructions} />
         </>
     )

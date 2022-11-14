@@ -19,11 +19,12 @@ function App() {
     }
     )
       .then(function(response){
-        console.log(response)
         return response.json();
       })
       .then(function(myJson) {
-        console.log(myJson);
+        // var item_value = sessionStorage.getItem("item_key");
+        sessionStorage.setItem("recipes", JSON.stringify(myJson.recipes));
+        sessionStorage.setItem("ingredients", JSON.stringify(myJson.ingredients));
         setData(myJson)
       });
   }  
@@ -32,7 +33,6 @@ function App() {
   },[])
 
   const updateIngredientFilter = (e) => {
-    console.log('data from child', e)
     setIngredientFilter(e);
   }
   return (
@@ -46,7 +46,7 @@ function App() {
      </ul>
      </aside>
      <main>
-     {selected !== {} && <Recipe chosen={selected} ingredientMap={ingredientMap}/> }
+     {selected !== {} ? <Recipe chosen={selected} ingredientMap={ingredientMap}/> : null}
      </main>
     </div>
   );
