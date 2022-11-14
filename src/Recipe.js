@@ -17,12 +17,20 @@ function IngredientDetail({ ingredient }) {
 function Ingredients({ ingredients }) {
     return (
         <>
-            <h2>Ingredients</h2>
             <ul>
                 {
                     ingredients && ingredients.length > 0 && ingredients.map((ingredient) => <li key={ingredient.id}><IngredientDetail ingredient={ingredient} /></li>)
                 }
             </ul>
+        </>
+    )
+}
+
+function IngredientSection({ingredientsection}) {
+    return (
+        <>
+            <h2>Ingredients</h2>
+            {ingredientsection.map((section) => <div key={section.id}><h3>{section.name}</h3><Ingredients ingredients={section.ingredients}/></div>)}
         </>
     )
 }
@@ -44,7 +52,10 @@ export default function Recipe({ chosen }) {
     return (
         <>
             <h1>{chosen.name}</h1>
-            <Ingredients ingredients={chosen.ingredients} />
+            <Ingredients ingredients={chosen.ingredients}/>
+            { chosen.ingredientsection ?
+            <IngredientSection ingredientsection={chosen.ingredientsection}/>
+            : null }
             <Instructions instructions={chosen.instructions} />
         </>
     )
